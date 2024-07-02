@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="startaFund.css">
+   
+</head>
+<body>
+
+  <section id="header">
+    <a href ="#"><img src="finallogo.png" class="start" alt=""></a>
+    <div id="name">
+        <h1>AKHUWAT</h1>
+    </div>
+    <div>
+        <ul id="navbar">
+            <li><a class="active" href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a  href="javascript:void(0)" class="dropbtn">For Individuals</a>
+                <div class="dropdown-content">
+                  <a href="donate.html">Donate</a>
+                  <a href="startaFund.html">Start Fundraising</a>
+                  <a href="hiw.html">How AKHUWAT works?</a>
+                </div>
+                <li class="dropdown">
+                  <a  href="forCharity.html" class="dropbtn">For Charities</a>
+                  <div class="dropdown-content">
+                    
+                    <a href="forCharity.html">Register your fundraiser</a>
+                    <a href="charityportal.html">Your Portal</a>
+                  </div>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Sign In</a>
+                <div class="dropdown-content">
+                  <a href="adminlogin.php">Admin</a>
+                  <a href="login.php">Individual</a>
+                 
+                </div>
+            <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</section>
+    <section id="afr" class="addfundraise">
+        
+            <button onclick="showForm()"" id="add-button">
+                <img id="image" src="add.png" alt="">
+            </button>
+
+        <div class="new">
+            <h1>Create a New Program</h1>
+        </div>
+
+    </section>
+
+    <section id="add-fund-form">
+        <!-- <h1>Creating a New Program</h1> -->
+
+        
+        <div class="container">
+            
+            <form id="contain" action="#">
+
+                <div class="namee content">
+                    <label for="program-name">Program Name:</label>
+                <input id="prog-name" name="program-name" type="text">
+                </div>
+                
+                <div class="cntry content">
+                    <label for="country">Country:</label>
+                    <input id="country" name="country" type="text">
+                </div>
+                
+                <div class="cty content">
+                    <label for="city">City:</label>
+                    <input id="city" name="city" type="text" class="city">
+                </div>
+
+                <div class="req-am content">
+                    <label for="reqAmount">Required Amount:</label>
+                    <input id="reqAmount" name="reqAmount" type="text" class="req-amount">
+                </div>
+
+                <div class="desc content">
+                    <label for="descr">Description:</label>
+                    <input id= "description" name="descr" type="text" class="descrip">
+                </div>
+
+                <h1 class="content" id="box-5">Account Details</h1>
+
+                <div class="accno content">
+                    <label for="accNum">Account Number:</label>
+                    <input id="accNum" name="accNum" type="text" class="acc-num">
+
+                </div>
+                
+                <div class="acnam content">
+                    <label for="accName">Account Name:</label>
+                    <input id="accName" name="accName" type="text" class="acc-name">
+                </div>
+
+                <div  class="submit-btn">
+                    <button onclick="submitt()" id="sbmt-btn">Submit</button>
+                </div>
+
+            </form>
+
+
+        </div>
+
+    </section>
+    <section id="programs-list" >
+        <div class="list">
+            <h1 id="-head" >Fundraising Programs</h1>
+            <ul class="all-items">
+                <li class="each-item">
+                    <div class="card" style="width: 35vw;">
+                        <img class="card-img-top" src="home.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Program 1</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="fundraiseProgram.html" class="btn btn-primary">View</a>
+                        </div>
+                      </div>
+                </li>
+                <li class="each-item"> 
+                    <div class="card" style="width: 35vw;">
+                        <img class="card-img-top" src="home.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Program 2</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="fundraiseProgram.html" class="btn btn-primary">View</a>
+                        </div>
+                      </div>
+                </li>
+                <li class="each-item">
+                    <div class="card" style="width: 35vw;">
+                        <img class="card-img-top" src="home.jpeg" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Program 3</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="fundraiseProgram.html" class="btn btn-primary">View</a>
+                        </div>
+                      </div>
+                </li>
+
+            </ul>
+        </div>
+    </section>
+
+    <section id="footer">
+      <footer class="footer">
+          <div class="footer__addr">
+          <a href ="#"><img src="finallogo.png" class="start" alt=""></a>
+            <h1 class="footer__logo">AKHUWAT</h1>
+                
+            <h2>Address</h2>
+            
+            <address>
+              852-B Milaad St, Block B Faisal Town, Lahore<br>
+                  
+              <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+          </div>
+          
+          <ul class="footer__nav">
+            
+            
+            
+            
+            <li class="nav__item">
+              <h2 class="nav__title">Useful Links</h2>
+              
+              <ul class="nav__ul">
+                <li>
+                  <a href="SignUp.html">Sign Up</a>
+                </li>
+                
+                <li>
+                  <a href="hiw.html">About Us</a>
+                </li>
+                
+                <li>
+                  <a href="Contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          
+          <div class="legal">
+            <p>&copy; 2023 AKHUWAT. All rights reserved.</p>
+            
+            <div class="legal__links">
+              <span>Made with <span class="heart">♥</span> By Fahad Musa Faizan Zohaib</span>
+            </div>
+          </div>
+        </footer>
+      </section>
+    <style>
+       body {
+  overflow-x: hidden;
+}
+    </style>
+     
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="startaFund.js" > </script>
+    
+</body>
+</html>

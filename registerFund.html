@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lange="en">
+  <head>
+    <a
+      href="https://www.flaticon.com/free-icons/number-1"
+      title="number 1 icons"
+    ></a>
+    <link rel="stylesheet" type="text/css" href="registerFund.css" />
+
+    <style>
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+
+        border-radius: 8px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      input[type="radio"] {
+        margin-right: 10px;
+      }
+
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      /* Styling the select dropdown */
+      button[name="charity"] {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: #ddd;
+      }
+
+      button[name="charity"]:hover,
+      button[name="charity"]:focus {
+        background-color: #bfbfbf;
+        outline: none;
+      }
+
+      button[name="charity"]:active {
+        background-color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <a href ="#"><img src="finallogo.png" class="start" alt=""></a>
+      <div id="name">
+          <h1>AKHUWAT</h1>
+      </div>
+      <div>
+          <ul id="navbar">
+              <li><a class="active" href="home.html">Home</a></li>
+              <li class="dropdown">
+                  <a  href="javascript:void(0)" class="dropbtn">For Individuals</a>
+                  <div class="dropdown-content">
+                    <a href="donate.html">Donate</a>
+                    <a href="startaFund.html">Start Fundraising</a>
+                    <a href="hiw.html">How AKHUWAT works?</a>
+                  </div>
+                  <li class="dropdown">
+                    <a  href="forCharity.html" class="dropbtn">For Charities</a>
+                    <div class="dropdown-content">
+                      
+                      <a href="forCharity.html">Register your fundraiser</a>
+                      <a href="charityportal.html">Your Portal</a>
+                    </div>
+              <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Sign In</a>
+                  <div class="dropdown-content">
+                    <a href="adminlogin.php">Admin</a>
+                    <a href="login.php">Individual</a>
+                   
+                  </div>
+              <li><a href="Contact.html">Contact Us</a></li>
+          </ul>
+      </div>
+  </section>
+    <section id="hero">
+      <h1>"Let's begin your fundraising journey!"</h1>
+      <h3>We're here to guide you every step of the way.</h3>
+    </section>
+
+    <section id="fundRaise">
+      <div class="box">
+        <h1>Which country are you from:</h1>
+        <form>
+          <label for="country">Select Country:</label>
+          <select id="country" name="country">
+            <option value="Pakistan">Pakistan</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="UK">UK</option>
+            <option value="Palestine">Palestine</option>
+            <option value="China">China</option>
+          </select>
+          <br /><br />
+
+          <label for="city">Enter City:</label>
+          <input type="text" id="city" name="city" />
+          <br /><br />
+
+          <label>Select Type of Charity:</label><br />
+          <button type="button" id="education" name="charity" value="education">
+            Education
+          </button>
+          <button
+            type="button"
+            id="healthcare"
+            name="charity"
+            value="healthcare"
+          >
+            Healthcare
+          </button>
+          <button
+            type="button"
+            id="environment"
+            name="charity"
+            value="environment"
+          >
+            Environment
+          </button>
+
+          <button
+            type="button"
+            id="animals"
+            name="charity"
+            value="animals"
+          >
+            Animals
+          </button>
+
+          <button
+            type="button"
+            id="Emergencies"
+            name="charity"
+            value="Emergencies"
+          >
+          Emergencies
+          </button>
+          
+          </button>
+
+          <br /><br />
+          
+          <a href="home.html" class="submit-button">Submit</a>
+        </form>
+      </div>
+    </section>
+
+
+
+    <section id="footer">
+      <footer class="footer">
+          <div class="footer__addr">
+          <a href ="#"><img src="finallogo.png" class="start" alt=""></a>
+            <h1 class="footer__logo">AKHUWAT</h1>
+                
+            <h2>Address</h2>
+            
+            <address>
+              852-B Milaad St, Block B Faisal Town, Lahore<br>
+                  
+              <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+          </div>
+          
+          <ul class="footer__nav">
+            
+            
+            
+            
+            <li class="nav__item">
+              <h2 class="nav__title">Useful Links</h2>
+              
+              <ul class="nav__ul">
+                <li>
+                  <a href="SignUp.html">Sign Up</a>
+                </li>
+                
+                <li>
+                  <a href="hiw.html">About Us</a>
+                </li>
+                
+                <li>
+                  <a href="Contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          
+          <div class="legal">
+            <p>&copy; 2023 AKHUWAT. All rights reserved.</p>
+            
+            <div class="legal__links">
+              <span>Made with <span class="heart">♥</span> By Fahad Musa Faizan Zohaib</span>
+            </div>
+          </div>
+        </footer>
+      </section>
+    <style>
+       body {
+  overflow-x: hidden;
+}
+    </style>
+     
+      
+  </body>
+</html>

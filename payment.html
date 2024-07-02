@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lange="en">
+  <head>
+    <a
+      href="https://www.flaticon.com/free-icons/number-1"
+      title="number 1 icons"
+    ></a>
+    <link rel="stylesheet" type="text/css" href="payment.css" />
+
+    <style>
+      form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      input[type="text"],
+      input[type="tel"],
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-size: 16px;
+      }
+
+      input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      input[type="radio"] {
+        display: none;
+      }
+
+      /* Styling for payment options */
+      .payment-options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .payment-option {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .payment-option img {
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+      }
+
+      input[type="radio"] + label {
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        transition: background-color 0.3s ease;
+      }
+
+      input[type="radio"]:checked + label {
+        background-color: #4caf50;
+        color: white;
+        border: 1px solid transparent;
+      }
+      .form-row {
+        display: flex;
+        gap: 20px;
+      }
+
+      .form-row input {
+        flex: 1; /* To make inputs fill the available space */
+      }
+
+      /* Media query for responsive layout */
+      @media (max-width: 600px) {
+        .form-row {
+          flex-direction: column; /* For mobile view, stack inputs */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="header">
+      <a href ="#"><img src="finallogo.png" class="start" alt=""></a>
+      <div id="name">
+          <h1>AKHUWAT</h1>
+      </div>
+      <div>
+          <ul id="navbar">
+              <li><a class="active" href="home.html">Home</a></li>
+              <li class="dropdown">
+                  <a  href="javascript:void(0)" class="dropbtn">For Individuals</a>
+                  <div class="dropdown-content">
+                    <a href="donate.html">Donate</a>
+                    <a href="startaFund.html">Start Fundraising</a>
+                    <a href="hiw.html">How AKHUWAT works?</a>
+                  </div>
+                  <li class="dropdown">
+                    <a  href="forCharity.html" class="dropbtn">For Charities</a>
+                    <div class="dropdown-content">
+                      
+                      <a href="forCharity.html">Register your fundraiser</a>
+                      <a href="charityportal.html">Your Portal</a>
+                    </div>
+              <li class="dropdown">
+                  <a href="javascript:void(0)" class="dropbtn">Sign In</a>
+                  <div class="dropdown-content">
+                    <a href="adminlogin.php">Admin</a>
+                    <a href="login.php">Individual</a>
+                   
+                  </div>
+              <li><a href="Contact.html">Contact Us</a></li>
+          </ul>
+      </div>
+  </section>
+    <section id="hero">
+      <h1>"Let's begin your fundraising journey!"</h1>
+      <h3>We're here to guide you every step of the way.</h3>
+    </section>
+
+    <section id="payment">
+      <form>
+        <div class="form-row">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+        </div>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+        <br /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{10}"
+          placeholder="Enter 10-digit phone number"
+          required
+        />
+        <br /><br />
+
+        <label for="cardNumber">Card Number:</label>
+        <input
+          type="text"
+          id="cardNumber"
+          name="cardNumber"
+          pattern="[0-9]{16}"
+          placeholder="Enter 16-digit card number"
+          required
+        />
+        <br /><br />
+
+        <label for="paymentMethod">Payment Method:</label><br />
+        <div class="payment-options">
+          <input
+            type="radio"
+            id="visaCard"
+            name="paymentMethod"
+            value="visaCard"
+            checked
+          />
+          <label for="visaCard" class="payment-option">
+            <img src="visa.png" alt="Visa Card" /> Visa Card </label
+          ><br />
+
+          <input
+            type="radio"
+            id="masterCard"
+            name="paymentMethod"
+            value="masterCard"
+          />
+          <label for="masterCard" class="payment-option">
+            <img src="master.png" alt="Master Card" /> Master Card </label
+          ><br />
+
+          <input type="radio" id="paypal" name="paymentMethod" value="paypal" />
+          <label for="paypal" class="payment-option">
+            <img src="paypal.png" alt="PayPal" /> PayPal </label
+          ><br />
+        </div>
+
+        <br /><br />
+
+        <a href="PaySuccess.html" class="submitPay-button">Submit Payment</a>
+      </form>
+    </section>
+
+
+
+    <section id="footer">
+      <footer class="footer">
+          <div class="footer__addr">
+          <a href ="#"><img src="finallogo.png" class="start" alt=""></a>
+            <h1 class="footer__logo">AKHUWAT</h1>
+                
+            <h2>Address</h2>
+            
+            <address>
+              852-B Milaad St, Block B Faisal Town, Lahore<br>
+                  
+              <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+            </address>
+          </div>
+          
+          <ul class="footer__nav">
+            
+            
+            
+            
+            <li class="nav__item">
+              <h2 class="nav__title">Useful Links</h2>
+              
+              <ul class="nav__ul">
+                <li>
+                  <a href="SignUp.html">Sign Up</a>
+                </li>
+                
+                <li>
+                  <a href="hiw.html">About Us</a>
+                </li>
+                
+                <li>
+                  <a href="Contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          
+          <div class="legal">
+            <p>&copy; 2023 AKHUWAT. All rights reserved.</p>
+            
+            <div class="legal__links">
+              <span>Made with <span class="heart">♥</span> By Fahad Musa Faizan Zohaib</span>
+            </div>
+          </div>
+        </footer>
+      </section>
+    <style>
+       body {
+  overflow-x: hidden;
+}
+    </style>
+     
+      
+  </body>
+</html>
